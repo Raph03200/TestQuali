@@ -1,0 +1,83 @@
+.container{
+    background-color: #2E3039;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.lines{
+    position: absolute;
+    inset: 0 0 auto 0;
+}
+
+.lines div{
+    height: 4px;
+}
+
+.lineColor{
+    width: 30%;
+}
+.line{
+    background-color: transparent;
+    width: 70%;
+}
+
+.content h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.pokeInfo{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pokeStatBattle{
+    letter-spacing: 1.6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pokeStatItem{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.pokeStatItem div{
+   max-width: 100%;
+}
+
+.button{
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    background: none;
+    border: 1px solid;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+
+@media(max-width: 850px){
+    .container{
+        position: relative !important;
+        margin: 20px 0 30px 0!important;
+        right: 0 !important;
+        min-width: 450px;
+    }
+}
+@media(max-width: 480px){
+    .container{
+        min-width: 250px;
+    }
+}

@@ -1,0 +1,25 @@
+.container{
+    font-size: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+    height: 220px;
+    position: absolute;
+    z-index: 4;
+}
+
+@media(max-width: 850px){
+    .container{
+        position: initial !important;
+    }
+    
+}
